@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/about/index.html</loc>
+    <loc>http://howtohowto.github.io/2014/05/31/%E5%9C%A8CentOS-7%E4%B8%AD%E6%90%AD%E5%BB%BAGit%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     
-    <lastmod>2018-07-31T03:20:25.533Z</lastmod>
+    <lastmod>2018-07-31T13:46:09.055Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/07/31/hello-world/</loc>
+    <loc>http://howtohowto.github.io/2012/12/31/hello-world/</loc>
     
-    <lastmod>2018-07-31T02:22:20.030Z</lastmod>
+    <lastmod>2018-07-31T13:20:22.076Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://howtohowto.github.io/about/index.html</loc>
+    
+    <lastmod>2018-07-31T03:20:25.533Z</lastmod>
     
   </url>
   
