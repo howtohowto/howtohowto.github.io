@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, next, howtohowto, howto, how, to" />
+  <meta name="keywords" content="linux, centos, mongodb," />
 
 
 
@@ -88,17 +88,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="参考官网文档https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/  一、安装1、配置yum管理包 在路径/etc/yum.repos.d/下创建文件mongodb-org-3.4.repo  123cd /etc/yum.repos.d/touch mongodb-org-3.4.repo  在文件mongodb">
+<meta name="keywords" content="linux, centos, mongodb">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://howtohowto.github.io/2012/12/31/hello-world/index.html">
+<meta property="og:title" content="CentOS 7 中安装 MongoDB 数据库">
+<meta property="og:url" content="http://howtohowto.github.io/2014/06/01/CentOS-7-中安装-MongoDB数据库/index.html">
 <meta property="og:site_name" content="How-to-How-to">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="参考官网文档https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/  一、安装1、配置yum管理包 在路径/etc/yum.repos.d/下创建文件mongodb-org-3.4.repo  123cd /etc/yum.repos.d/touch mongodb-org-3.4.repo  在文件mongodb">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-31T13:20:22.076Z">
+<meta property="og:updated_time" content="2018-08-01T05:56:48.469Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="CentOS 7 中安装 MongoDB 数据库">
+<meta name="twitter:description" content="参考官网文档https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/  一、安装1、配置yum管理包 在路径/etc/yum.repos.d/下创建文件mongodb-org-3.4.repo  123cd /etc/yum.repos.d/touch mongodb-org-3.4.repo  在文件mongodb">
 
 
 
@@ -128,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://howtohowto.github.io/2012/12/31/hello-world/"/>
+  <link rel="canonical" href="http://howtohowto.github.io/2014/06/01/CentOS-7-中安装-MongoDB数据库/"/>
 
 
 
 
 
-  <title>Hello World | How-to-How-to</title>
+  <title>CentOS 7 中安装 MongoDB 数据库 | How-to-How-to</title>
   
 
 
@@ -251,7 +252,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://howtohowto.github.io/2012/12/31/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://howtohowto.github.io/2014/06/01/CentOS-7-中安装-MongoDB数据库/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Qing">
@@ -268,7 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">CentOS 7 中安装 MongoDB 数据库</h1>
         
 
         <div class="post-meta">
@@ -280,8 +281,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2012-12-31T00:01:02+08:00">
-                2012-12-31
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-06-01T13:50:43+08:00">
+                2014-06-01
               </time>
             
 
@@ -336,16 +337,28 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <blockquote>
+<p>参考官网文档<br><a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/" target="_blank" rel="noopener">https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/</a></p>
+</blockquote>
+<h2 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h2><h4 id="1、配置yum管理包"><a href="#1、配置yum管理包" class="headerlink" title="1、配置yum管理包"></a>1、配置yum管理包</h4><ol>
+<li>在路径/etc/yum.repos.d/下创建文件mongodb-org-3.4.repo</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/yum.repos.d/</span><br><span class="line"></span><br><span class="line">touch mongodb-org-3.4.repo</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>在文件mongodb-org-3.4.repo中写入如下内容</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">[mongodb-org-3.4]</span><br><span class="line"></span><br><span class="line">name=MongoDB Repository</span><br><span class="line"></span><br><span class="line">baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.4/x86_64/</span><br><span class="line"></span><br><span class="line">gpgcheck=1</span><br><span class="line"></span><br><span class="line">enable=1</span><br><span class="line"></span><br><span class="line">gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc</span><br></pre></td></tr></table></figure>
+<h4 id="2、安装mongodb"><a href="#2、安装mongodb" class="headerlink" title="2、安装mongodb"></a>2、安装mongodb</h4><p>会安装mongodb-org包及其依赖包mongodb-org-server、mongodb-org-mongos、mongodb-org-shell、mongodb-org-tools</p>
+<p>数据库实例默认在/var/lib/mongo路径下，日志默认在/var/log/mongodb路径下，也可以通过修改/etc/mongod.conf文件的storage.dbPath和systemLog.path配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">yum install -y mongodb-org</span><br></pre></td></tr></table></figure>
+<h4 id="3、开启mongodb服务"><a href="#3、开启mongodb服务" class="headerlink" title="3、开启mongodb服务"></a>3、开启mongodb服务</h4><p><code>service mongod start</code></p>
+<h4 id="4、通过查看日志方式，验证服务开启成功，其中有一行为：-thread1-waiting-for-connections-on-port-27017"><a href="#4、通过查看日志方式，验证服务开启成功，其中有一行为：-thread1-waiting-for-connections-on-port-27017" class="headerlink" title="4、通过查看日志方式，验证服务开启成功，其中有一行为：[thread1] waiting for connections on port 27017"></a>4、通过查看日志方式，验证服务开启成功，其中有一行为：[thread1] waiting for connections on port 27017</h4><p><code>cat /var/log/mongodb/mongod.log</code></p>
+<h4 id="5、设置开机启动"><a href="#5、设置开机启动" class="headerlink" title="5、设置开机启动"></a>5、设置开机启动</h4><p><code>chkconfig mongod on</code></p>
+<h4 id="6、停止mongodb服务"><a href="#6、停止mongodb服务" class="headerlink" title="6、停止mongodb服务"></a>6、停止mongodb服务</h4><p><code>service mongod stop</code></p>
+<h4 id="7、重启mongodb服务"><a href="#7、重启mongodb服务" class="headerlink" title="7、重启mongodb服务"></a>7、重启mongodb服务</h4><p><code>service mongod restart</code></p>
+<h2 id="二、卸载"><a href="#二、卸载" class="headerlink" title="二、卸载"></a>二、卸载</h2><h4 id="1、停止服务"><a href="#1、停止服务" class="headerlink" title="1、停止服务"></a>1、停止服务</h4><p><code>service mongod stop</code></p>
+<h4 id="2、删除安装的包"><a href="#2、删除安装的包" class="headerlink" title="2、删除安装的包"></a>2、删除安装的包</h4><p><code>yum erase $(rpm -qa | grep mongodb-org)</code></p>
+<h4 id="3、删除数据及日志"><a href="#3、删除数据及日志" class="headerlink" title="3、删除数据及日志"></a>3、删除数据及日志</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rm -r /var/log/mongodb</span><br><span class="line"></span><br><span class="line">rm -r /var/lib/mongo</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -389,7 +402,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://howtohowto.github.io/2012/12/31/hello-world/" title="Hello World">http://howtohowto.github.io/2012/12/31/hello-world/</a>
+    <a href="http://howtohowto.github.io/2014/06/01/CentOS-7-中安装-MongoDB数据库/" title="CentOS 7 中安装 MongoDB 数据库">http://howtohowto.github.io/2014/06/01/CentOS-7-中安装-MongoDB数据库/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -401,6 +414,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/linux-centos-mongodb/" rel="tag"># linux, centos, mongodb</a>
+          
+        </div>
       
 
       
@@ -426,15 +445,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2014/05/31/在CentOS-7中搭建Git服务器/" rel="next" title="在CentOS 7中搭建 Git 服务器">
+                <i class="fa fa-chevron-left"></i> 在CentOS 7中搭建 Git 服务器
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2014/05/31/在CentOS-7中搭建Git服务器/" rel="prev" title="在CentOS 7中搭建 Git 服务器">
-                在CentOS 7中搭建 Git 服务器 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -564,7 +583,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、安装"><span class="nav-number">1.</span> <span class="nav-text">一、安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、配置yum管理包"><span class="nav-number">1.0.1.</span> <span class="nav-text">1、配置yum管理包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、安装mongodb"><span class="nav-number">1.0.2.</span> <span class="nav-text">2、安装mongodb</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、开启mongodb服务"><span class="nav-number">1.0.3.</span> <span class="nav-text">3、开启mongodb服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、通过查看日志方式，验证服务开启成功，其中有一行为：-thread1-waiting-for-connections-on-port-27017"><span class="nav-number">1.0.4.</span> <span class="nav-text">4、通过查看日志方式，验证服务开启成功，其中有一行为：[thread1] waiting for connections on port 27017</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、设置开机启动"><span class="nav-number">1.0.5.</span> <span class="nav-text">5、设置开机启动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、停止mongodb服务"><span class="nav-number">1.0.6.</span> <span class="nav-text">6、停止mongodb服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、重启mongodb服务"><span class="nav-number">1.0.7.</span> <span class="nav-text">7、重启mongodb服务</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、卸载"><span class="nav-number">2.</span> <span class="nav-text">二、卸载</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、停止服务"><span class="nav-number">2.0.1.</span> <span class="nav-text">1、停止服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、删除安装的包"><span class="nav-number">2.0.2.</span> <span class="nav-text">2、删除安装的包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、删除数据及日志"><span class="nav-number">2.0.3.</span> <span class="nav-text">3、删除数据及日志</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
